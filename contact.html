@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Chef LILI</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <div class="logo-icon">L</div>
+                <span class="logo-text">Chef LILI</span>
+            </div>
+
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="index.html#about" class="nav-link">Sobre</a>
+                <a href="index.html#services" class="nav-link">Serviços</a>
+                <a href="menu.html" class="nav-link">Cardápio</a>
+                <a href="contact.html" class="nav-link">Contato</a>
+            </div>
+
+            <a href="contact.html" class="nav-cta">Solicitar Evento</a>
+
+            <button class="navbar-toggle" id="navbarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="elegant-heading">Entre em Contato</h1>
+            <p class="page-subtitle">
+                Solicite um orçamento ou tire suas dúvidas sobre nossos serviços
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📞 Telefone</h3>
+                        <a href="tel:+5511999999999">(11) 99999-9999</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>✉️ Email</h3>
+                        <a href="mailto:contato@cheflili.com">contato@cheflili.com</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📍 Localização</h3>
+                        <p>Rua das Flores, 123<br>São Paulo, SP 01234-567</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>⏰ Horário</h3>
+                        <p>Seg - Sex: 11h às 23h<br>Sab - Dom: 12h às 00h</p>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="contact-form">
+                    <form id="eventForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" name="name" required placeholder="Seu nome">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(11) 99999-9999">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="eventType">Tipo de Evento</label>
+                                <select id="eventType" name="eventType" required>
+                                    <option value="catering">Catering</option>
+                                    <option value="coffee-break">Coffee Break</option>
+                                    <option value="corporativo">Evento Corporativo</option>
+                                    <option value="casamento">Casamento</option>
+                                    <option value="aniversario">Aniversário</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="eventDate">Data do Evento</label>
+                                <input type="date" id="eventDate" name="eventDate" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="guestCount">Número de Convidados</label>
+                                <input type="number" id="guestCount" name="guestCount" required placeholder="50">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem / Detalhes do Evento</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Descreva seu evento, preferências de cardápio, tema, etc..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Solicitação</button>
+
+                        <div id="successMessage" class="success-message" style="display: none;">
+                            Obrigado! Sua solicitação foi enviada com sucesso. Entraremos em contato em breve.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Localização</h2>
+            <div class="map-container">
+                <iframe
+                    width="100%"
+                    height="400"
+                    frameborder="0"
+                    title="Localização Chef LILI"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1976505555!2d-46.6560!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa001%3A0xab35da2f5ca62674!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-title">Chef LILI</h3>
+                    <p class="footer-text">Gastronomia de excelência para experiências memoráveis</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="menu.html">Cardápio</a></li>
+                        <li><a href="services.html">Serviços</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#restaurante">Restaurante</a></li>
+                        <li><a href="services.html#catering">Catering</a></li>
+                        <li><a href="services.html#coffee-breaks">Coffee Breaks</a></li>
+                        <li><a href="services.html#eventos">Eventos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contato</h4>
+                    <ul class="footer-contact">
+                        <li><a href="tel:+5511999999999">📞 (11) 99999-9999</a></li>
+                        <li><a href="mailto:contato@cheflili.com">✉️ contato@cheflili.com</a></li>
+                        <li>📍 São Paulo, SP</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Chef LILI. Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">📱</a>
+                    <a href="#" aria-label="Facebook">f</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
